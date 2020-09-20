@@ -9,6 +9,14 @@ export const GlobalStyle = createGlobalStyle`
 	}
 	
 	body {
-		padding: 0;
-	}
+		font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1;
+    overflow-y: hidden;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 `;
