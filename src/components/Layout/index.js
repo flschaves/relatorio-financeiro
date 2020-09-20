@@ -6,7 +6,7 @@ const Layout = ({ title, children }) => {
       {/* <Header />
       <Nav /> */}
       <main>
-        <h1>{title}</h1>
+        {title && <h1>{title}</h1>}
         {children}
       </main>
     </>
