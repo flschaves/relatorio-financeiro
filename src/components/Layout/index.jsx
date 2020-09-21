@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Header from "../Header";
 import Nav from "../Nav";
 
+import { Main } from "./styles";
+
 const Layout = ({ title, children }) => {
   const [menuVisible, setMenuVisible] = useState(false);
 
@@ -9,10 +11,10 @@ const Layout = ({ title, children }) => {
     <>
       <Header menuVisible={menuVisible} setMenuVisible={setMenuVisible} />
       <Nav menuVisible={menuVisible} />
-      <main>
+      <Main>
         {title && <h1>{title}</h1>}
         {children}
-      </main>
+      </Main>
     </>
   );
 };
