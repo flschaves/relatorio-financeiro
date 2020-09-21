@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.header`
   position: fixed;
@@ -31,8 +31,8 @@ export const Tools = styled.div`
   }
 
   svg {
-	margin-right: 5px;
-	vertical-align: middle;
+    margin-right: 5px;
+    vertical-align: middle;
   }
 
   @media (min-width: 768px) {
