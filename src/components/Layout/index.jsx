@@ -3,7 +3,7 @@ import Header from '../Header';
 
 const Layout = ({ title, children }) => (
   <>
-    <Header />
+    {/* <Header /> */}
     {/* <Nav /> */}
     <main>
       {title && <h1>{title}</h1>}
