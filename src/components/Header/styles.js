@@ -1,11 +1,12 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.header`
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 10;
 
-  background-color: #3c1361;
+  background-color: ${(props) => props.theme.light.primary};
   padding: 15px;
   height: 70px;
   width: 100%;
@@ -14,6 +15,22 @@ export const Container = styled.header`
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+`;
+
+export const Menu = styled.span`
+  border: 1px solid #fff;
+  padding: 5px 5px 2px;
+  border-radius: 2px;
+  margin-right: 10px;
+  cursor: pointer;
+
+  svg {
+    color: #fff;
+  }
+
+  @media (min-width: 1024px) {
+    display: none;
+  }
 `;
 
 export const Logo = styled.span``;
