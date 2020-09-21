@@ -4,9 +4,9 @@ import { FaGithub, FaBars } from "react-icons/fa";
 import logoImage from "../../assets/images/logo.png";
 import { Container, Menu, Logo, Tools } from "./styles";
 
-const Header = () => (
+const Header = ({ menuVisible, setMenuVisible }) => (
   <Container>
-    <Menu>
+    <Menu onClick={() => setMenuVisible(!menuVisible)}>
       <FaBars />
     </Menu>
 
