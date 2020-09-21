@@ -12,7 +12,6 @@ export default createGlobalStyle`
 		font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 1;
-    overflow-y: hidden;
   }
 
   img {
