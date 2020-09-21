@@ -2,8 +2,6 @@ import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 
-
-import Layout from './components/Layout';
 import Routes from './routes';
 
 const App = () => {
@@ -17,11 +15,9 @@ const App = () => {
   return (
     <React.Suspense fallback={<div>Carregando...</div>}>
       <ThemeProvider theme={theme}>
-        <Layout>
-          <Router>
-            <Routes />
-          </Router>
-        </Layout>
+        <Router>
+          <Routes />
+        </Router>
       </ThemeProvider>
     </React.Suspense>
   );
