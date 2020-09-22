@@ -36,7 +36,7 @@ const items = [
 
 const Nav = ({ menuVisible }) => (
   <Container className={menuVisible ? "show" : ""}>
-    <StyledNavLink to="/">
+    <StyledNavLink exact to="/">
       <FaInfoCircle size={16} />
       Sobre
     </StyledNavLink>
@@ -44,7 +44,7 @@ const Nav = ({ menuVisible }) => (
     <Separator>Cálculos</Separator>
 
     {items.map((item) => (
-      <StyledNavLink to={item.path} key={item.path}>
+      <StyledNavLink exact to={item.path} key={item.path}>
         {item.icon}
         {item.label}
       </StyledNavLink>
@@ -52,12 +52,12 @@ const Nav = ({ menuVisible }) => (
 
     <Separator>Ferramentas</Separator>
 
-    <StyledNavLink to="/ferramentas/importar">
+    <StyledNavLink exact to="/ferramentas/importar">
       <FaFileImport />
       Importar
     </StyledNavLink>
 
-    <StyledNavLink to="/ferramentas/exportar">
+    <StyledNavLink exact to="/ferramentas/exportar">
       <FaFileExport />
       Exportar
     </StyledNavLink>
