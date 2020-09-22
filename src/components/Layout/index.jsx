@@ -8,7 +8,7 @@ const Layout = ({ title, children }) => {
   return (
     <>
       <Header menuVisible={menuVisible} setMenuVisible={setMenuVisible} />
-      <Nav menuVisible={menuVisible} />
+      <Nav menuVisible={menuVisible} setMenuVisible={setMenuVisible} />
       <main>
         {title && <h1>{title}</h1>}
         {children}
