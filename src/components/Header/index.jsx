@@ -15,12 +15,7 @@ const Header = ({ menuVisible, setMenuVisible }) => (
     </Logo>
 
     <Tools>
-      {/* eslint-disable-next-line */}
-      <a
-        href="https://github.com/flschaves/relatorio-financeiro/"
-        target="_blank"
-        rel="noopener noreferer"
-      >
+      <a href="https://github.com/flschaves/relatorio-financeiro/">
         <FaGithub size={16} />
         Ver no Github
       </a>
