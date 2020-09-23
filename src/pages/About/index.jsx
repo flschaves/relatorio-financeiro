@@ -3,7 +3,7 @@ import React from "react";
 import Layout from "../../components/Layout";
 
 const About = () => {
-  return <Layout>Olá</Layout>;
+  return <>Olá</>;
 };
 
 export default About;

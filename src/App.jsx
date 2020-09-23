@@ -2,7 +2,10 @@ import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 
+import GlobalStyle from "./styles";
+
 import Routes from './routes';
+import Layout from './components/Layout';
 
 const App = () => {
   const theme = {
@@ -16,7 +19,10 @@ const App = () => {
     <React.Suspense fallback={<div>Carregando...</div>}>
       <ThemeProvider theme={theme}>
         <Router>
-          <Routes />
+          <Layout>
+            <Routes />
+            <GlobalStyle />
+          </Layout>
         </Router>
       </ThemeProvider>
     </React.Suspense>
