@@ -4,7 +4,7 @@ import Nav from "../Nav";
 
 import { Main } from "./styles";
 
-const Layout = ({ title, children }) => {
+const Layout = ({ children }) => {
   const [menuVisible, setMenuVisible] = useState(false);
 
   return (
@@ -12,7 +12,6 @@ const Layout = ({ title, children }) => {
       <Header menuVisible={menuVisible} setMenuVisible={setMenuVisible} />
       <Nav menuVisible={menuVisible} setMenuVisible={setMenuVisible} />
       <Main>
-        {title && <h1>{title}</h1>}
         {children}
       </Main>
     </>
